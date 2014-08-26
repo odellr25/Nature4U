@@ -72,6 +72,14 @@
             <br />
            
           </div>
+        <div class="NatureBoxConf">
+           <br />
+            &nbsp<asp:Label ID="lblSymptoms" Text="<% $ Resources:NatureConf, lblBodyParts%>" runat="server" CssClass="NatureSubTittle" />
+            <hr style="color:#0024ff"/>
+        </div>
+        <div class="NatureBoxConf">
+            conteido de la derecha
+        </div>
         <br />
         <br />
     </div>

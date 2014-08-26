@@ -22,12 +22,15 @@
 .NatureBoxConf 
 {
      box-shadow: 1px 1px 15px #B3B3B3;
-     width:400px;
+     width:32%;
+     min-width:400px;
      height:auto;
      border-color:#002cff;
      border-width:2px;
      border-style:solid;
-     display:inline-block;
+     float:left;
+     margin-left:10px;
+     margin-top:10px;
 
 }
 .NatureSubTittle 
@@ -76,3 +79,7 @@
      border-style:solid;
      background-color:#d4d4d4;
     }
+#dFooter 
+{
+    clear:both;
+}
