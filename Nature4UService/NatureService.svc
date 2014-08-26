@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Nature4UService.NatureService" CodeBehind="NatureService.svc.cs" %>

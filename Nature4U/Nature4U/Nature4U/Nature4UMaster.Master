@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Nature4UMaster.master.cs" Inherits="Nature4U.Nature4UMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="App_Themes/mainStyle.css" rel="stylesheet" type="text/css"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="dHeader">
+            Contenido de arriba de la pagina
+        </div>
+        <div id="dNav">
+            Contenido de navegacion de la pagina
+        </div>
+        <div id="dContent">
+            <asp:ContentPlaceHolder ID="cphMainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="dFooter">
+            Contenido de abajod de la pagina
+        </div>
+    </form>
+</body>
+</html>

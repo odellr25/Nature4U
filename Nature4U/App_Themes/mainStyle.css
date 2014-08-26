@@ -1,0 +1,78 @@
+﻿body 
+{
+    font-family:Calibri;
+    background-color:#fff;
+}
+.NatureTittle 
+{
+    font-size:30pt;
+    font-family:Arial;
+    color:#12b500;
+}
+.fontNormal 
+{
+    font-family:Calibri;
+}
+.marginLR5
+{
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom: 0px;
+}
+.NatureBoxConf 
+{
+     box-shadow: 1px 1px 15px #B3B3B3;
+     width:400px;
+     height:auto;
+     border-color:#002cff;
+     border-width:2px;
+     border-style:solid;
+     display:inline-block;
+
+}
+.NatureSubTittle 
+{
+    font-size:15pt;
+    font-family:Arial;
+    color:#2d24ff;
+}
+.TextBoxCSSStyle 
+{
+     box-shadow: 1px 1px 15px #B3B3B3;
+     border-color:#002cff;
+     border-width:2px;
+     border-style:solid;
+}
+.DropDownCSSStyle 
+{
+     box-shadow: 1px 1px 15px #B3B3B3;
+     border-color:#284dfa;
+     border-width:2px;
+     border-style:solid;
+}
+.ButtonCSSStyle 
+{
+      box-shadow: 1px 1px 15px #B3B3B3;
+     border-color:#284dfa;
+     border-width:2px;
+     border-style:solid;
+     background-color:#fff;
+
+}
+    .ButtonCSSStyle:hover 
+    {
+     box-shadow: 1px 1px 30px #4757a1;
+     border-color:#284dfa;
+     border-width:2px;
+     border-style:solid;
+     background-color:#fff;
+     transition:box-shadow 0.2s ease-in-out;
+    }
+    .ButtonCSSStyle:active
+    {
+     box-shadow: 1px 1px 20px #ffffff;
+     border-color:#000000;
+     border-width:2px;
+     border-style:solid;
+     background-color:#d4d4d4;
+    }
