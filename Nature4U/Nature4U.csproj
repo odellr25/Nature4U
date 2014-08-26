@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5C4A3D8E-EE34-4BA2-83D4-2BDE1C60B715}</ProjectGuid>
+    <ProjectGuid>{5E1A0928-4DB6-436A-A688-CDB3A37CF78E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -39,6 +39,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,18 +59,77 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\mainStyle.css" />
+    <Content Include="Nature\NatureConfigure.aspx" />
+    <Content Include="Service References\NatureServiceRef\Nature4U.NatureServiceRef.BodyParts.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\NatureServiceRef\NatureService.disco" />
+    <None Include="Service References\NatureServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\NatureServiceRef\configuration.svcinfo" />
+    <None Include="Service References\NatureServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\NatureConf.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NatureConf.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Nature4UMaster.Master.cs">
+      <DependentUpon>Nature4UMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nature4UMaster.Master.designer.cs">
+      <DependentUpon>Nature4UMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Nature\NatureConfigure.aspx.cs">
+      <DependentUpon>NatureConfigure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Nature\NatureConfigure.aspx.designer.cs">
+      <DependentUpon>NatureConfigure.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\NatureServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Nature4UMaster.Master" />
+    <None Include="Service References\NatureServiceRef\NatureService.wsdl" />
+    <None Include="Service References\NatureServiceRef\NatureService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NatureServiceRef\NatureService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NatureServiceRef\NatureService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\NatureConf.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>NatureConf.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\NatureServiceRef\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -85,7 +146,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49474/</IISUrl>
+          <IISUrl>http://localhost:55599/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
